@@ -41,8 +41,6 @@ void Game::set_box_size(int box_size)
 
 void Game::start_game()
 {
-    for (auto x : this->numbers)
-    {
-        std::cout << x << " ";
-    }
+    this->update_numbers();
+    this->rendrer->render_puzzle(this->numbers);
 }
